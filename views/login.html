@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вход — SS Tools</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="auth-body">
+<main class="auth-card">
+  <div class="brand-lg">SS Tools</div>
+  <div class="brand-sub">by command8913</div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-tab="login">Вход</button>
+    <button class="tab" data-tab="register">Заявка на доступ</button>
+  </div>
+  <form id="form" autocomplete="on">
+    <label>Логин<input id="username" name="username" autocomplete="username" required minlength="3" maxlength="24" autofocus></label>
+    <label>Пароль<input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" maxlength="128"></label>
+    <label class="reg-only" hidden>Повторите пароль<input id="password2" type="password" autocomplete="new-password" minlength="8" maxlength="128"></label>
+    <label class="reg-only" hidden>Кто вы / зачем доступ<input id="note" maxlength="200" placeholder="например: хелпер, ник на сервере"></label>
+    <div id="msg" class="msg" role="alert"></div>
+    <button class="btn primary wide" id="submit" type="submit">Войти</button>
+  </form>
+</main>
+<script src="/assets/login.js"></script>
+</body>
+</html>

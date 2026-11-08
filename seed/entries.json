@@ -1,0 +1,450 @@
+[
+ {
+  "sectionId": "powershell",
+  "name": "Event Logs",
+  "content": "powershell -Command Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Invoke-Expression (Invoke-RestMethod https://raw.githubusercontent.com/command8913/SS-Tools/main/clearusn.ps1)",
+  "description": "",
+  "order": 0
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Services",
+  "content": "powershell -Command Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Invoke-Expression (Invoke-RestMethod https://raw.githubusercontent.com/command8913/SS-Tools/main/servicescheck.ps1)",
+  "description": "",
+  "order": 1
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Traceroute",
+  "content": "tracert funtime.su",
+  "description": "",
+  "order": 2
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Netstat",
+  "content": "netstat -ano | findstr 2556",
+  "description": "",
+  "order": 3
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Get-NetTCPConnection",
+  "content": "powershell -command \"Get-NetTCPConnection | Where-Object { ((Get-Process javaw -ErrorAction SilentlyContinue).Id -contains $_.OwningProcess) -and ($_.LocalPort -eq 25565 -or $_.RemotePort -eq 25565) }\"",
+  "description": "",
+  "order": 4
+ },
+ {
+  "sectionId": "powershell",
+  "name": "InjGen",
+  "content": "curl -OL \"https://github.com/NotRequiem/InjGen/releases/download/v2.0/InjGen.exe\" && InjGen.exe && del InjGen.exe",
+  "description": "",
+  "order": 5
+ },
+ {
+  "sectionId": "powershell",
+  "name": "DoomsDay Fuck",
+  "content": "curl -OL \"https://raw.githubusercontent.com/command8913/SS-Tools/main/doomsdayfuck.exe\" && doomsdayfuck.exe && del doomsdayfuck.exe",
+  "description": "",
+  "order": 6
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Faker Fuck",
+  "content": "curl -OL \"https://raw.githubusercontent.com/command8913/SS-Tools/main/fakerfuck.exe\" && fakerfuck.exe && del fakerfuck.exe",
+  "description": "",
+  "order": 7
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Jmd .tech",
+  "content": "curl -L -o jmd.exe https://api.map4yk.tech/static/files/jmd.exe && jmd.exe",
+  "description": "",
+  "order": 8
+ },
+ {
+  "sectionId": "powershell",
+  "name": "Jmd Linux",
+  "content": "curl -sSL https://raw.githubusercontent.com/danfordd/jmd-linux/main/run.sh | sudo bash",
+  "description": "",
+  "order": 9
+ },
+ {
+  "sectionId": "powershell",
+  "name": "InjGen fork",
+  "content": "curl -OL \"https://github.com/Orbdiff/InjGen/releases/download/fork/InjGen.exe\" && InjGen.exe && del InjGen.exe",
+  "description": "",
+  "order": 10
+ },
+ {
+  "sectionId": "powershell",
+  "name": "JARParser",
+  "content": "curl -OL \"https://github.com/Orbdiff/JARParser/releases/download/v1.2/JARParser.exe\" && JARParser.exe",
+  "description": "",
+  "order": 11
+ },
+ {
+  "sectionId": "powershell",
+  "name": "AmcacheParser",
+  "content": "curl -OL \"https://github.com/Orbdiff/AmcacheParser/releases/download/v1.0/AmcacheParser.exe\" && AmcacheParser.exe",
+  "description": "",
+  "order": 12
+ },
+ {
+  "sectionId": "powershell",
+  "name": "BAM",
+  "content": "powershell Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass && powershell Invoke-Expression (Invoke-RestMethod https://pastebin.com/raw/Mn8ESpfH)",
+  "description": "",
+  "order": 13
+ },
+ {
+  "sectionId": "site",
+  "name": "Ocean",
+  "content": "https://anticheat.ac/downloads",
+  "description": "",
+  "order": 0
+ },
+ {
+  "sectionId": "site",
+  "name": "JournalTrace",
+  "content": "https://github.com/spokwn/JournalTrace/releases/tag/1.2",
+  "description": "",
+  "order": 1
+ },
+ {
+  "sectionId": "site",
+  "name": "PreviousFilesRecovery",
+  "content": "https://www.nirsoft.net/utils/previous_files_recovery.html",
+  "description": "",
+  "order": 2
+ },
+ {
+  "sectionId": "site",
+  "name": "ShellBags Analyzer & Cleaner",
+  "content": "https://privazer.com/ru/download-shellbag-analyzer-shellbag-cleaner.php",
+  "description": "",
+  "order": 3
+ },
+ {
+  "sectionId": "site",
+  "name": "System Informer",
+  "content": "https://systeminformer.com/canary",
+  "description": "",
+  "order": 4
+ },
+ {
+  "sectionId": "site",
+  "name": "Everything 1.5 Alpha",
+  "content": "https://www.voidtools.com/everything-1.5a/",
+  "description": "",
+  "order": 5
+ },
+ {
+  "sectionId": "site",
+  "name": "USBDriveLog",
+  "content": "https://www.nirsoft.net/utils/usb_drive_log.html",
+  "description": "",
+  "order": 6
+ },
+ {
+  "sectionId": "site",
+  "name": "USBDeview",
+  "content": "https://www.nirsoft.net/utils/usb_devices_view.html",
+  "description": "",
+  "order": 7
+ },
+ {
+  "sectionId": "site",
+  "name": "ExecutedProgramsList",
+  "content": "https://www.nirsoft.net/utils/executed_programs_list.html",
+  "description": "",
+  "order": 8
+ },
+ {
+  "sectionId": "site",
+  "name": "OpenSaveFilesView",
+  "content": "https://www.nirsoft.net/utils/open_save_files_view.html",
+  "description": "",
+  "order": 9
+ },
+ {
+  "sectionId": "site",
+  "name": "CachedProgramsList",
+  "content": "https://github.com/ponei/CachedProgramsList/releases/tag/1.1",
+  "description": "",
+  "order": 10
+ },
+ {
+  "sectionId": "site",
+  "name": "LastActivityView",
+  "content": "https://www.nirsoft.net/utils/computer_activity_view.html",
+  "description": "",
+  "order": 11
+ },
+ {
+  "sectionId": "site",
+  "name": "WinPrefetchView",
+  "content": "https://www.nirsoft.net/utils/win_prefetch_view.html",
+  "description": "",
+  "order": 12
+ },
+ {
+  "sectionId": "site",
+  "name": "Process Hacker",
+  "content": "https://sourceforge.net/projects/processhacker/",
+  "description": "",
+  "order": 13
+ },
+ {
+  "sectionId": "site",
+  "name": "NetworkTrafficView",
+  "content": "https://www.nirsoft.net/utils/network_traffic_view.html",
+  "description": "",
+  "order": 14
+ },
+ {
+  "sectionId": "site",
+  "name": "NetworkUsageView",
+  "content": "https://www.nirsoft.net/utils/network_usage_view.html",
+  "description": "",
+  "order": 15
+ },
+ {
+  "sectionId": "site",
+  "name": "BAM Parser",
+  "content": "https://github.com/spokwn/BAM-parser/releases/tag/v1.2.9",
+  "description": "",
+  "order": 16
+ },
+ {
+  "sectionId": "site",
+  "name": "Prefetch Parser",
+  "content": "https://github.com/spokwn/prefetch-parser/releases/tag/v1.5.5",
+  "description": "",
+  "order": 17
+ },
+ {
+  "sectionId": "site",
+  "name": "PcaSvc",
+  "content": "https://github.com/spokwn/pcasvc-executed/releases/tag/v0.8.7",
+  "description": "",
+  "order": 18
+ },
+ {
+  "sectionId": "site",
+  "name": "ProcessParser",
+  "content": "https://github.com/spokwn/process-parser/releases/tag/v0.5.5",
+  "description": "",
+  "order": 19
+ },
+ {
+  "sectionId": "site",
+  "name": "Espouken Bitrate",
+  "content": "https://github.com/spokwn/Tool/releases/download/v1.1.2/espoukenBitrate.exe",
+  "description": "",
+  "order": 20
+ },
+ {
+  "sectionId": "site",
+  "name": "Kernel Live Dump Tool",
+  "content": "https://github.com/spokwn/KernelLiveDumpTool/releases/tag/v1.1",
+  "description": "",
+  "order": 21
+ },
+ {
+  "sectionId": "site",
+  "name": "Bam Deleted Keys",
+  "content": "https://github.com/spokwn/BamDeletedKeys/releases/tag/v1.0",
+  "description": "",
+  "order": 22
+ },
+ {
+  "sectionId": "site",
+  "name": "Activities Cache Execution",
+  "content": "https://github.com/spokwn/ActivitiesCache-execution/releases/tag/v0.6.5",
+  "description": "",
+  "order": 23
+ },
+ {
+  "sectionId": "site",
+  "name": "PathsParser",
+  "content": "https://github.com/spokwn/PathsParser/releases/tag/v1.2",
+  "description": "",
+  "order": 24
+ },
+ {
+  "sectionId": "site",
+  "name": "Replaceparser",
+  "content": "https://github.com/spokwn/Replaceparser/releases/tag/v1.1-recode",
+  "description": "",
+  "order": 25
+ },
+ {
+  "sectionId": "site",
+  "name": "Zimmerman",
+  "content": "https://ericzimmerman.github.io/",
+  "description": "",
+  "order": 26
+ },
+ {
+  "sectionId": "site",
+  "name": "AccessData FTK Imager",
+  "content": "https://github.com/codejanus/study_Security/tree/master/AccessData%20FTK%20Imager",
+  "description": "",
+  "order": 27
+ },
+ {
+  "sectionId": "site",
+  "name": "BrowserDownloadsView",
+  "content": "https://www.nirsoft.net/utils/web_browser_downloads_view.html",
+  "description": "",
+  "order": 28
+ },
+ {
+  "sectionId": "site",
+  "name": "Wireless Network Watcher",
+  "content": "https://www.nirsoft.net/utils/wireless_network_watcher.html",
+  "description": "",
+  "order": 29
+ },
+ {
+  "sectionId": "site",
+  "name": "TCPView",
+  "content": "https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview",
+  "description": "",
+  "order": 30
+ },
+ {
+  "sectionId": "site",
+  "name": "Handle",
+  "content": "https://learn.microsoft.com/en-us/sysinternals/downloads/handle",
+  "description": "",
+  "order": 31
+ },
+ {
+  "sectionId": "site",
+  "name": "BrowsingHistoryView",
+  "content": "https://www.nirsoft.net/utils/browsing_history_view.html",
+  "description": "",
+  "order": 32
+ },
+ {
+  "sectionId": "site",
+  "name": "SS-Tools by command8913",
+  "content": "https://github.com/command8913/SS-Tools",
+  "description": "",
+  "order": 33
+ },
+ {
+  "sectionId": "site",
+  "name": "WinDefLogView",
+  "content": "https://www.nirsoft.net/utils/windows_defender_log_viewer.html",
+  "description": "",
+  "order": 34
+ },
+ {
+  "sectionId": "site",
+  "name": "WinDefThreatsView",
+  "content": "https://www.nirsoft.net/utils/windows_defender_threats_view.html",
+  "description": "",
+  "order": 35
+ },
+ {
+  "sectionId": "site",
+  "name": "AmcacheParser",
+  "content": "https://github.com/Orbdiff/AmcacheParser/releases/download/v1.0/AmcacheParser.exe",
+  "description": "",
+  "order": 36
+ },
+ {
+  "sectionId": "site",
+  "name": "InjGen (Orbdiff)",
+  "content": "https://github.com/Orbdiff/InjGen/releases/download/fork/InjGen.exe",
+  "description": "",
+  "order": 37
+ },
+ {
+  "sectionId": "site",
+  "name": "JARParser",
+  "content": "https://github.com/Orbdiff/JARParser/releases/download/v1.2/JARParser.exe",
+  "description": "",
+  "order": 38
+ },
+ {
+  "sectionId": "everything",
+  "name": "JAR Sizes",
+  "content": "size:1822841|size:1880869|size:895578|size:77252|size:1901564|size:62782|size:32141|size:45626|size:137550|size:145819|size:43265|size:18527|size:52876|size:31607|size:19950|size:411711|size:25729|size:25574|size:102733|size:170201|size:98811|size:80751|size:7234|size:8489|size:519570|size:4261630|size:30279|size:102128|size:168512|size:65486|size:244108|size:51079|size:4779194|size:4610404|size:2401727|size:1569093|size:1067233|size:799883|size:781074|size:307444|size:146403|size:114974|size:62731|size:45468|size:20284|size:19809|size:3716267|size:1091434|size:925493|size:92843|size:100523|size:68580|size:54088|size:39094|size:37927|size:31889|size:27152|size:12140|size:9699|size:9372|size:7891|size:4433|size:5553|size:36559|size:257482|size:9327|size:9119|size:983485|size:64662|size:61791|size:44212|size:41046|size:34400|size:55432|size:192156|size:33442|size:22370|size:46522|size:5266|size:677999|size:31600|size:409934|size:20639|size:20883|size:20850|size:8681|size:103761|size:2371|size:17339|size:47159|size:519731|size:20578|size:878781|size:350629|size:52426|size:65316|size:6778|size:35971|size:112386|size:147329|size:274865|size:34669|size:95530|size:120640|size:169718|size:7218|size:10605|size:29567|size:39017|size:88896|size:39321|size:143006|size:156722|size:143597|size:1165063|size:18180|size:18587|size:138417|size:68794|size:183634|size:48242|size:21161|size:21664|size:31549|size:300286|size:65765|size:51212|size:59381|size:147873|size:26179274|size:3541075|size:5630483|size:4642998|size:202720|size:21234|size:26691896|size:1471429|size:7059952|size:263070|size:597406|size:532826|size:3684385|size:640838|size:22258750|size:40142|size:98811|size:3642292|size:3541138|size:25704986|size:38149|size:67491|size:334588|size:343169|size:636621|size:102297|size:20583|size:10283|size:26247|size:156779|size:166677|size:267746|size:16541|size:69757|size:6515|size:22036|size:22861|size:410358|size:1181556|size:18527|size:27546|size:28084|size:29304|size:30279|size:19266|size:153937|size:10958|size:1077149|size:183651|size:539151|size:50828|size:12849589|size:3425801|size:2762117|size:13421|size:408460|size:2706423|size:10341|size:23644|size:10899|size:14079|size:13198|size:10040473|size:11122997|size:43616|size:40852|size:41478|size:1883641|size:904479|size:71800|size:409882|size:409934|size:410358|size:6689538|size:4872|size:9908|size:2695432|size:3113569|size:1312804|size:5633|size:2951|size:8377|size:96987|size:26597|size:2820004|size:1199558|size:6673888|size:11554|size:15539388|size:41479|size:4848952|size:2731126|size:3884125|size:3884125|size:2747806|size:28674|size:549882|size:8399|size:100799|size:6165|size:331348|size:976207|size:1053919|size:1093553|size:561414|size:725218|size:9834|size:969043|size:96869|size:19421|size:1433832|size:36936|size:33154|size:88896|size:10074|size:636621|size:487544|size:30514|size:56798|size:37038|size:27809|size:257482|size:95121|size:10724|size:11020|size:10711|size:7037|size:11054299|size:6377588|size:152013|size:126235|size:52426|size:7007|size:5066|size:5094|size:244108|size:300286|size:62731|size:146403|size:307444|size:19809|size:102297|size:274865|size:17339|size:45468|size:925493|size:124102|size:519731|size:4610404|size:4779194|size:799883|size:20639|size:7059952|size:59381|size:68580|size:20284|size:42058|size:19950|size:20850|size:51079|size:54088|size:878781|size:137550|size:145819|size:983485|size:5630483|size:9327|size:9119|size:10283|size:98811|size:35993|size:895578|size:25969|size:556494|size:1091434|size:597406|size:986825|size:987636|size:25729|size:25574|size:102243|size:102128|size:102733|size:104687|size:4261630|size:1901564|size:190014|size:103761|size:350629|size:1444714|size:36672|size:153937|size:4433|size:12140|size:7234|size:80751|size:31607|size:20883|size:334588|size:39094|size:39017|size:8489|size:6753|size:25110|size:52876|size:47159|size:411711|size:46522|size:39321|size:677999|size:192156|size:21234|size:3716267|size:7891|size:143600|size:156779|size:166677|size:267746|size:94601|size:65486|size:183634|size:22036|size:31600|size:147329|size:44212|size:27152|size:37927|size:61791|size:62782|size:16541|size:31889|size:1569093|size:69757|size:66068|size:151762|size:40142|size:43265|size:5266|size:6515|size:19514|size:22861|size:1181556|size:9372|size:18180|size:18527|size:22370|size:22944|size:27546|size:28084|size:29304|size:33442|size:34669|size:30279|size:31549|size:51212|size:25704986|size:25858901|size:25930112|size:26179274|size:3541075|size:4642998|size:34400|size:41046|size:55432|size:1067233|size:2401727|size:781074|size:32141|size:45626|size:77252|size:2371|size:100523|size:1165063|size:9699|size:10626|size:168512|size:170201|size:169718|size:1822841|size:1880869|size:35971|size:519570|size:112386|size:114974|size:36559|size:38105558|size:8681|size:7803|size:105623|size:101297|size:66659|size:72334|size:977754|size:969523|size:20258|size:14416|size:15054|size:18561|size:106351|size:409616|size:41873|size:4650|size:14658|size:6694|size:13220|size:16741|size:40758|size:4447|size:31223067|size:38729700|size:37958312|size:11985713|size:4019|size:13140|size:7588414|size:12599|size:14478|size:343169|size:466866|size:5676|size:15158|size:990635|size:349439|size:77476|size:17811|size:13560|size:13583|size:96405|size:6770|size:28904|size:53610|size:1024263|size:1657044|size:327636|size:56459|size:11554|size:263070|size:87598|size:191274|size:6363|size:3357|size:379967|size:17357|size:12376|size:990635|size:8206349|size:41215955|size:41244619|size:41215501|size:41285921|size:41280575|size:45078792|size:45107091|size:45071715|size:31129345|size:25800561|size:2460142|size:6243481|size:120236587|size:7602202|size:1608111|size:68415771|size:119591|size:5094126 *.jar",
+  "description": "",
+  "order": 0
+ },
+ {
+  "sectionId": "everything",
+  "name": "Client Size",
+  "content": "size:9951744|size:24536064|size:15438336|size:6229504|size:6573056|size:7187456|size:7969792|size:1562249|size:1672329|size:1677449|size:1680521|size:147329|size:138351|size:202720|size:7788032|size:22885|size:23810|size:138351|size:147329|size:7988736|size:3711166|size:3697285|size:3712014|size:5641728|size:4413440|size:114974|size:111866|size:274865|size:1820884|size:5007380|size:6944256|size:5934592|size:2545664|size:2108662|size:1961742|size:3684385|size:5143837|size:4413440|size:116689|size:1968128|size:8011776|size:1883602|size:5918208|size:1897269|size:31445308|size:24390144|size:25158656|size:2023236|size:16836288|size:88065933|size:197933122|size:2258533|size:2305645|size:2372788|size:18764384|size:9400174|size:2363704|size:15445581|size:2373676|size:138351|size:7788032|size:22885|size:23810|size:7988736|size:3711166|size:3697285|size:3712014|size:5641728|size:4413440|size:111866|size:1820884|size:5007380|size:6944256|size:5934592|size:2545664|size:2108662|size:1961742|size:3684385|size:5143837|size:1968128|size:8011776|size:1883602|size:6533121|size:16629226|size:28107997|size:8249687|size:5524900|size:140200|size:132133|size:110439|size:6244043|size:6867367|size:43883|size:514855|size:479296|size:9530356|size:355527744|size:1819289|size:1897269|size:16855568|size:16964112|size:2023236|size:5918208|ssize:31445308|size:24390144|size:10657176|size:460288|size:19521024|size:15076480|size:7204864|size:1613824|size:1499136|size:1488896|size:9332326|size:9400174| size:10071288|size:9400174|size:10071288|size:15794048|Baritone|Nursultan|JournalTrace|ExecutedProgramsList|SystemInformer|ProcessHacker|WinPrefetchView|LastActivityView|CachedProgramsList|USBDriveLog|USBDeview|OpenSaveFilesView|PreviousFilesRecovery|shellbag_analyzer_cleaner",
+  "description": "",
+  "order": 1
+ },
+ {
+  "sectionId": "everything",
+  "name": "Client Names",
+  "content": "impact | wurst | bleachhack | aristois | huzuni | skillclient | inertia | ares | sigma | meteor | liquidbounce | nurik | nursultan | celestial | calestial | celka | expensive | neverhook | excellent | wexside | wildclient | minced | deadcode | akrien | jigsaw | future | jessica | dreampool | norules | konas | richclient | rusherhack | thunderhack | moonhack | doomsday | nightware | ricardo | extazyy | troxill | antileak | arbuz | .akr | .wex | dauntiblyat | rename_me_please | editme | takker | fuzeclient | wisefolder| flauncher | vec.dll | USBOblivion.exe | Feather | delta | venus | baritone | spambot | CleanCut | spam_bot | inventory_walk | player_highlighter | aimbot | freecam | bedrock_breaker_mode | viaversion | double_hotbar | elytra_swap | armor_hotswap | smart_moving | chest | savesearcher | topkautobuy | topkaautobuy | tweakeroo | mob_hitbox | librarian_trade_finder | sacurachorusfind | autoattack | entity_outliner | invmove | viabackwards | viarewind | viafabric | viaforge | viaproxy | vialoader | viamcp | hitbox | elytrahack | DiamondSim | ForgeHax | clientcommands | Control-Tweaks | SwingThroughGrass | CutThrough",
+  "description": "",
+  "order": 2
+ },
+ {
+  "sectionId": "everything",
+  "name": "Vec.dll",
+  "content": "size:30720 utf8content:net/minecraft/client/entity/player/ClientPlayerEntity|net/minecraft/util/math/AxisAlignedBB",
+  "description": "",
+  "order": 3
+ },
+ {
+  "sectionId": "everything",
+  "name": "DoomsDay Client",
+  "content": "size:21kb..30mb ext:jar utf8content:net/java/i.class",
+  "description": "",
+  "order": 4
+ },
+ {
+  "sectionId": "everything",
+  "name": "Blessed Client",
+  "content": "size:.exe size:6435-26435kb utf8content:_get_initial_narrow_environment utf8content:DOS utf8content:LookupPrivilegeValueA utf8content:AllocateAndInitializeSid utf8content:AdjustTokenPrivileges",
+  "description": "",
+  "order": 5
+ },
+ {
+  "sectionId": "everything",
+  "name": "Avalon Client",
+  "content": "size:700kb..5mb ext:exe utf8content:TriggerBot|net/minecraft/entity/player/PlayerEntity",
+  "description": "",
+  "order": 6
+ },
+ {
+  "sectionId": "everything",
+  "name": "Troxill Client",
+  "content": "ext:exe size:11mb..19mb utf8content:D3D11CreateDeviceAndSwapChain|LoadLibraryA",
+  "description": "",
+  "order": 7
+ },
+ {
+  "sectionId": "everything",
+  "name": "EXE Files",
+  "content": "size:29112077 | size:18122220 | size:9464832 | size:460288 | size:28107997 | size:7539712 | size:11478392 | size:3699880 | size:3766264 | size:8981280 | size:15308800 | size:782848 | size:743424 | size:823808 *.exe",
+  "description": "",
+  "order": 8
+ },
+ {
+  "sectionId": "everything",
+  "name": "Обходы",
+  "content": "ext:jar;exe;ps1 <size:10468899|size:10503064|size:11264|size:11825134|size:12085206|size:12167126|size:12179017|size:12419226|size:12422626|size:12504546|size:12874564|size:12874908|size:12877053|size:12956484|size:12956828|size:12958973|size:147456|size:151552|size:196176968|size:2109440|size:218213|size:23227837|size:24925542|size:25007462|size:28160|size:2936320|size:310784|size:35840|size:38520304|size:4457984|size:480455|size:5253632|size:52722370|size:5517|size:6157536|size:87040|size:96539|size:99840|size:2209280|size:2919936> !C:\\Windows\\",
+  "description": "",
+  "order": 9
+ },
+ {
+  "sectionId": "everything",
+  "name": "Latest.log",
+  "content": "latest.log content:funtime (content:releondlc | content:rich | content:accurateblockplacement | content:xray | content:autofish | content:chunkanimator | content:mobhealthbar | content:journeymap | content:xaeroworldmap | content:xaerominimap | content:TopkaXaerosMinimap | content:truesight | content:freecam | content:diamondgen | content:donutauctions | content:friendhighlighter | content:chesttracker | content:invisibilityreveal | content:playerhighlighter | content:playerspotlight | content:reap | content:tweakeroo | content:autoharvest | content:flashback | content:worlddownloader | content:cmdcam | content:replaymod | content:isometric-renders | content:litematica | content:block-entity-tooltip | content:xaerobetterpvp | content:worldedit | content:removeblindness | content:luminar | content:simplevisuals | content:auchelper | content:inventory_control_tweaks | content:autoleave | content:foodslot_vv | content:foodslot | content:quickstack | content:autotools | content:movement-in-gui | content:invmove | content:fireworkhelper | content:inventoryprofilesnext | content:rockstar | content:catlean | content:insecure | content:ddnt | content:nightdlc | content:cleancut | content:autoattack | content:effortlessbuilding | content:meteor-client)",
+  "description": "",
+  "order": 10
+ }
+]

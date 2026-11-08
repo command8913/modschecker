@@ -1,0 +1,20 @@
+[
+ {
+  "id": "powershell",
+  "title": "PowerShell",
+  "type": "command",
+  "order": 0
+ },
+ {
+  "id": "site",
+  "title": "Site",
+  "type": "link",
+  "order": 1
+ },
+ {
+  "id": "everything",
+  "title": "Everything",
+  "type": "command",
+  "order": 2
+ }
+]
